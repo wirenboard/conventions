@@ -1,0 +1,5 @@
+Conventions (1.0.0) Stable; urgency=medium
+
+  * Initial release. Taken from wb-mqtt-homeui 2.29.0
+
+ -- Petr Krasnoshchekov <petr.krasnoshchekov@wirenboard.ru>  Fri, 18 Feb 2022 15:36:27 +0500
