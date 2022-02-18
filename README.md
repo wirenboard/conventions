@@ -125,7 +125,7 @@ Precision could be specified in ```precision``` property. The value is rounded t
 
 #### Specific value type controls
 
-A read-only control for a certain type of value.
+These control types are deprecated. It is recommended to use `units` property instead.
 
 | Type 	| meta/type	| units  	| value format  	|
 |---	|---	|---	|---	|
