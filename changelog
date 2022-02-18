@@ -1,3 +1,10 @@
+Conventions (1.1.0) stable; urgency=medium
+
+  * Units support is added.
+    /meta/units is deprecated. Units property in /meta JSON should be used instead.
+
+ -- Petr Krasnoshchekov <petr.krasnoshchekov@wirenboard.ru>  Fri, 18 Feb 2022 17:04:22 +0500
+
 Conventions (1.0.0) Stable; urgency=medium
 
   * Initial release. Taken from wb-mqtt-homeui 2.29.0
