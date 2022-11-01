@@ -1,3 +1,9 @@
+Conventions (1.2.0) stable; urgency=medium
+
+  * Add mOhm, mV and mA units for MAI6
+
+ -- Nikita Maslov <nikita.maslov@wirenboard.ru>  Tue, 01 Nov 2022 13:45:33 +0600
+
 Conventions (1.1.0) stable; urgency=medium
 
   * Units support is added.

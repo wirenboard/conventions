@@ -153,12 +153,14 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | W         | watt, power |
 | kWh       | kilowatt hour, power consumption |
 | V         | voltage |
+| mV        | voltage (millivolts) |
 | m^3/h     | cubic meters per hour, flow |
 | m^3       | cubic meters, volume |
 | Gcal/h    | giga calories per hour, heat power |
 | cal       | calories, energy |
 | Gcal      | giga calories, energy |
 | Ohm       | resistance |
+| mOhm      | resistance (milliohms) |
 | bar       | pressure |
 | mbar      | pressure (100Pa) |
 | s         | second |
@@ -173,6 +175,7 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | deg C     | temperature |
 | %         | percent |
 | A         | ampere, current |
+| mA        | milliampere, current |
 | deg       | degree, angle |
 | rad       | radian, angle |
 
