@@ -1,6 +1,6 @@
 Conventions (1.3.0) stable; urgency=medium
 
-  * Add ppb units for MSW VOC sensor
+  * Add ppm, ppb units for MSW VOC sensor
 
  -- Pavel Gasheev <pavel.gasheev@wirenboard.ru>  Tue, 20 Dec 2022 16:15:24 +0300
 

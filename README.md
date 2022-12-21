@@ -174,6 +174,7 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | %, RH     | relative humidity |
 | deg C     | temperature |
 | %         | percent |
+| ppm       | parts per million |
 | ppb       | parts per billion |
 | A         | ampere, current |
 | mA        | milliampere, current |
