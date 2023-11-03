@@ -143,6 +143,8 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | Gas concentration | concentration | ppm  | float (unsigned) |
 | Heat power | heat_power | Gcal / hour | float |
 | Heat energy | heat_energy | Gcal | float |
+| Current | current | A | float |
+
 
 #### Units
 
