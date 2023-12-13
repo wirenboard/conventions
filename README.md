@@ -46,22 +46,23 @@ The topic contains all meta information in one JSON
     // Control's type
     "type": "value",
 
-    // Units. ASCII string. Could be set only for type "value"
+    // Units. ASCII string. Could be set only for type "value". No utits by default
     "units": "W",
 
-    // Maximum allowed control's value
+    // Maximum allowed control's value. Default value is 100
     "max": 100,
 
-    // Minimum allowed control's value
+    // Minimum allowed control's value. Default value is 0
     "min": -100.1,
 
     // Control's value is rounded to defined precision by a driver and it is also used during user input validation
+    // If no precision present value used as is
     "precision": 0.1,
 
     // Display order in user interface
     "order": 10,
 
-    // The control doesn't have /on topic
+    // The control doesn't have /on topic. Default value is false
     "readonly": true,
 
     "title": {
@@ -73,6 +74,7 @@ The topic contains all meta information in one JSON
 ```
 
 `type`, `min`, `max`, `order`, `readonly` could be published as subtopics of `/devices/+/controls/+/meta` for backward compatibility with old conventions.
+
 
 ### Control Types
 
