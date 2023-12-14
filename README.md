@@ -46,17 +46,17 @@ The topic contains all meta information in one JSON
     // Control's type
     "type": "value",
 
-    // Units. ASCII string. Could be set only for type "value". No utits by default
+    // Units. ASCII string. Could be set only for type "value". No units by default
     "units": "W",
 
-    // Maximum allowed control's value. Default value is 100
+    // Maximum allowed control's value. Default value for range type is 10^9, for other types no limit specified by default
     "max": 100,
 
-    // Minimum allowed control's value. Default value is 0
+    // Minimum allowed control's value. Default value for range type is 0, for other types no limit specified by default
     "min": -100.1,
 
     // Control's value is rounded to defined precision by a driver and it is also used during user input validation
-    // If no precision present value used as is
+    // If no precision is present, the value is used as-is
     "precision": 0.1,
 
     // Display order in user interface
