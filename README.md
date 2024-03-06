@@ -70,8 +70,8 @@ The topic contains all meta information in one JSON
         ...
     }
 
-    // Enum titles for control's value. Could be set only for type "enum".
-    // Each key in "enum" should be a stringified number, specified in either decimal or hexadecimal format.
+    // Enum titles for control's value. Could be set for type "value" and "text".
+    // In case of type "value", each key in "enum" should be a stringified number, specified in either decimal or hexadecimal format.
     "enum": {
         "0": {
             "en": ENUM_TITLE,
@@ -126,11 +126,6 @@ The numbers itself must be integers between 0 and 255.
 A read-only control that displays it's value as text.
 * Meta topic value: text
 * Possible values: Anything
-
-#### Enum
-R/W control for drop-down menu
-* Meta topic value: enum
-* Possible values: integer
 
 #### Generic value type control
 
