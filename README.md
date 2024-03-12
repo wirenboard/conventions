@@ -1,5 +1,4 @@
-Wiren Board MQTT Conventions
-================================
+## Wiren Board MQTT Conventions
 
 The basic abstractions are *devices* and their *controls*. 
 
@@ -70,11 +69,26 @@ The topic contains all meta information in one JSON
         "ru": CONTROL_TITLE_RU, // Russian title of the control
         ...
     }
+
+    // Enum titles for control's value. Could be set for type "value" and "text".
+    // In case of type "value", each key in "enum" should be a stringified number, specified in either decimal or hexadecimal format.
+    "enum": {
+        "0": {
+            "en": ENUM_TITLE,
+            "ru": ENUM_TITLE_RU,
+            ...
+        },
+        "1": {
+            "en": ENUM_TITLE,
+            "ru": ENUM_TITLE_RU,
+            ...
+        },
+        ...
+    }
 }
 ```
 
 `type`, `min`, `max`, `order`, `readonly` could be published as subtopics of `/devices/+/controls/+/meta` for backward compatibility with old conventions.
-
 
 ### Control Types
 
@@ -90,11 +104,9 @@ A control that indicates whether an alarm is active.
 
 #### Push button
 A stateless push button
-
 * Meta topic value: pushbutton
 * Possible values: 1
 * Messages may lack retained flag
-
 
 #### Range
 A range slider that takes integer values between 0 and any other integer that is greater 1
@@ -107,9 +119,8 @@ Different values can be set by publishing an arbitrary integer that is in range 
 #### RGB color control
 R/W control for color
 * Meta topic value: rgb
-* Possible values: "R;G;B" , i.e. three semicolon-delimited numbers.
+* Possible values: "R;G;B", i.e. three semicolon-delimited numbers.
 The numbers itself must be integers between 0 and 255.
-
 
 #### Text
 A read-only control that displays it's value as text.
@@ -146,7 +157,6 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | Heat power | heat_power | Gcal / hour | float |
 | Heat energy | heat_energy | Gcal | float |
 | Current | current | A | float |
-
 
 #### Units
 
