@@ -157,6 +157,9 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | Heat power | heat_power | Gcal / hour | float |
 | Heat energy | heat_energy | Gcal | float |
 | Current | current | A | float |
+| Pressure | pressure | bar | float |
+| Illuminance | lux | lx | float |
+| Sound level | sound_level | dB | float |
 
 #### Units
 
