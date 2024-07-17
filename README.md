@@ -140,26 +140,26 @@ Precision could be specified in ```precision``` property. The value is rounded t
 
 :warning: **WARNING**: These control types are deprecated. It is recommended to use `units` property instead.
 
-| Type 	| meta/type	| units  	| value format  	|
-|---	|---	|---	|---	|
-| Temperature  	| temperature| °C  	| float  	|
-| Relative humidity  	| rel_humidity| %, RH  	| float, 0 - 100  	|
-| Atmospheric pressure  	| atmospheric_pressure | millibar (100 Pa)  	| float    	|
-| Precipitation rate (rainfall rate) | rainfall | mm per hour | float |
-| Wind speed |  wind_speed | m/s | float |
-| Power |  power | watt | float |
-| Power consumption |  power_consumption | kWh | float |
-| Voltage |  voltage | volts | float |
-| Water flow | water_flow | m^3 / hour | float |
-| Water total consumption | water_consumption | m^3  | float |
-| Resistance | resistance | Ohm  | float |
-| Gas concentration | concentration | ppm  | float (unsigned) |
-| Heat power | heat_power | Gcal / hour | float |
-| Heat energy | heat_energy | Gcal | float |
-| Current | current | A | float |
-| Pressure | pressure | bar | float |
-| Illuminance | lux | lx | float |
-| Sound level | sound_level | dB | float |
+| Type                               | meta/type            | units       | value format |
+|---                                 |---                   |---          |---           |
+| Temperature                        | temperature          | deg C       | float |
+| Relative humidity                  | rel_humidity         | %, RH       | float, 0 - 100 |
+| Atmospheric pressure               | atmospheric_pressure | mbar        | float |
+| Precipitation rate (rainfall rate) | rainfall             | mm/h        | float |
+| Wind speed                         | wind_speed           | m/s         | float |
+| Power                              | power                | W           | float |
+| Power consumption                  | power_consumption    | kWh         | float |
+| Voltage                            | voltage              | V           | float |
+| Water flow                         | water_flow           | m^3/h       | float |
+| Water total consumption            | water_consumption    | m^3         | float |
+| Resistance                         | resistance           | Ohm         | float |
+| Gas concentration                  | concentration        | ppm         | float (unsigned) |
+| Heat power                         | heat_power           | Gcal/h      | float |
+| Heat energy                        | heat_energy          | Gcal        | float |
+| Current                            | current              | A           | float |
+| Pressure                           | pressure             | bar         | float |
+| Illuminance                        | lux                  | lx          | float |
+| Sound level                        | sound_level          | dB          | float |
 
 #### Units
 
@@ -197,6 +197,8 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | mA        | milliampere, current |
 | deg       | degree, angle |
 | rad       | radian, angle |
+| lx        | illuminance |
+| dB        | sound level |
 
 #### Errors
 
