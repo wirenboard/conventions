@@ -199,6 +199,8 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | rad       | radian, angle |
 | lx        | illuminance |
 | dB        | sound level |
+| Hz        | hertz, frequency |
+| rpm       | revolutions per minute |
 
 #### Errors
 
