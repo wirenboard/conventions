@@ -123,7 +123,7 @@ R/W control for color
 The numbers itself must be integers between 0 and 255.
 
 #### Text
-A read-only control that displays it's value as text.
+A control that displays a value as text.
 * Meta topic value: text
 * Possible values: Anything
 
