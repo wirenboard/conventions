@@ -201,6 +201,7 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | dB        | sound level |
 | Hz        | hertz, frequency |
 | rpm       | revolutions per minute |
+| Pa        | pressure |
 
 #### Errors
 
