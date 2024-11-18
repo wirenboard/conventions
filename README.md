@@ -2,7 +2,16 @@
 
 The basic abstractions are *devices* and their *controls*. 
 
-Each *device* has some *controls* assigned to it, i.e. parameters that can be controlled or monitored. *Devices* and *controls* are identified by names (arbitrary strings), and have some metadata. Metadata messages are published on device startup with `retained` flag set.
+Each *device* has some *controls* assigned to it, i.e. parameters that can be controlled or monitored.
+*Devices* and *controls* are identified by names, which are generally arbitrary strings.
+
+Starting from 2024, WirenBoard has established the following rules for naming new device and control MQTT topics:
+- The topic name cannot include punctuation, brackets, or special characters such as %$#& etc.
+- For a new device, the topic name should not contain more than four words and numbers. Write each word in lowercase and separate them with underscores.
+- For a new version of an existing device, make the topics compatible with the old pattern (marked as deprecated). The names of new topics should be styled identically to the existing topics.
+
+Each MQTT topic has some metadata.
+Metadata messages are published on device startup with `retained` flag set.
 For example, some room lighting control *device* with one input (for wall switch) and one output (for controlling the lamp) *controls* is represented with MQTT topics as following:
 
 * `/devices/RoomLight/meta` - JSON with all meta information about *device*
