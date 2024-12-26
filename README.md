@@ -205,7 +205,10 @@ Precision could be specified in ```precision``` property. The value is rounded t
 
 #### Errors
 
-`/devices/+/controls/+/meta/error` topics can contain a combination of values:
+`/devices/+/controls/+/meta/error`
+`/devices/+/meta/error` 
+
+Topics can contain a combination of values:
 - `r` - read from device error
 - `w` - write to device error
 - `p` - read period miss
