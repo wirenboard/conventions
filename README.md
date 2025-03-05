@@ -223,6 +223,6 @@ Precision could be specified in ```precision``` property. The value is rounded t
 `/devices/+/meta/error` 
 
 Topics can contain a combination of values:
-- `r` - read from device error
+- `r` - failed to read from device or a device reports an error
 - `w` - write to device error
 - `p` - read period miss
