@@ -226,3 +226,5 @@ Topics can contain a combination of values:
 - `r` - failed to read from device or a device reports an error
 - `w` - write to device error
 - `p` - read period miss
+
+When setting the read error flag `r`, the control's topic must contain the last known good value. After a successful read, the `r` error flag is first removed, then the new good value is published. The `w` write error flag is removed only after a successful write, regardless of whether the read was successful.
