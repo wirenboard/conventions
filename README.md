@@ -141,6 +141,12 @@ A control that displays a value as text.
 * Meta topic value: text
 * Possible values: Anything
 
+#### 1-Wire Device Identifier
+A control type for Dallas 1-Wire device identifiers (addresses). 
+* Meta topic value: w1-id
+* Possible values: 64-bit unsigned integer
+* Formatted as 7-bytes HEX-string starting with device family identifier: XX-XXXXXXXXXXXX
+
 #### Generic value type control
 
 A control for a arbitrary value.
