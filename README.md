@@ -1,24 +1,34 @@
 ## Wiren Board MQTT Conventions
 
+### Basic Concepts
+
 The basic abstractions are *devices* and their *controls*. 
 
-All devices must be located at the root level of the MQTT broker under the `/devices/..` topic (e.g., `/devices/<!new_device_name!>/...`).
+### Topic Structure & Root Path
+
+All devices must be located at the root level of the MQTT broker under the `/devices/...` topic (e.g., `/devices/<!new_device_name!>/...`).
 
 Each *device* has some *controls* assigned to it, i.e. parameters that can be controlled or monitored.
 *Devices* and *controls* are identified by names, which are generally arbitrary strings.
+
+### Naming Conventions (2024+)
 
 Starting from 2024, WirenBoard has established the following rules for naming MQTT topics for new devices and their controls:
 - The topic name cannot include punctuation, brackets, or special characters such as %$#& etc.
 - For a new device, the topic name should not contain more than four words and numbers. Write each word in lowercase and separate them with underscores.
 - For a new version of an existing device, make the topics compatible with the old pattern (marked as deprecated). The names of new topics should be styled identically to the existing topics.
 
-Examples:
+**Examples:**
 - Good: `/devices/room_light/meta`
 - Bad: `/devices/Room-Light#1/meta`
 - Old: `/devices/RoomLight/meta` - not recommended for new topics
 
+### Metadata Publishing
+
 The metadata is published exclusively in the `*/meta` topics and their subtopics.
 Metadata messages are published on device startup with `retained` flag set.
+
+### Example: Device and Controls Hierarchy
 For example, some room lighting control *device* with one input (for wall switch) and one output (for controlling the lamp) *controls* is represented with MQTT topics as following:
 
 * `/devices/room_light/meta` - JSON with all meta information about *device*
