@@ -2,6 +2,8 @@
 
 The basic abstractions are *devices* and their *controls*. 
 
+All devices must be located at the root level of the MQTT broker under the `/devices/..` topic (e.g., `/devices/device_name/...`).
+
 Each *device* has some *controls* assigned to it, i.e. parameters that can be controlled or monitored.
 *Devices* and *controls* are identified by names, which are generally arbitrary strings.
 
@@ -19,14 +21,14 @@ The metadata is published exclusively in the `*/meta` topics and their subtopics
 Metadata messages are published on device startup with `retained` flag set.
 For example, some room lighting control *device* with one input (for wall switch) and one output (for controlling the lamp) *controls* is represented with MQTT topics as following:
 
-* `/devices/RoomLight/meta` - JSON with all meta information about *device*
-* `/devices/RoomLight/meta/error` - device-level error state, non-null means there was an error (usable as Last Will and Testament)
-* `/devices/RoomLight/controls/Lamp` - contains current lamp state, '0' = off, '1' = on
-* `/devices/RoomLight/controls/Lamp/on` - send a message with this topic and payload of '0'/'1' to turn lamp off or on
-* `/devices/RoomLight/controls/Lamp/meta` - JSON with all meta information about control
-* `/devices/RoomLight/controls/Switch` - contains current wall switch state
-* `/devices/RoomLight/controls/Switch/meta` - JSON with all meta information about control
-* `/devices/RoomLight/controls/Switch/meta/error` - non-null value means there was an error reading or writing the control. In this case  `/devices/RoomLight/controls/Switch` contains last known good value.
+* `/devices/room_light/meta` - JSON with all meta information about *device*
+* `/devices/room_light/meta/error` - device-level error state, non-null means there was an error (usable as Last Will and Testament)
+* `/devices/room_light/controls/Lamp` - contains current lamp state, '0' = off, '1' = on
+* `/devices/room_light/controls/Lamp/on` - send a message with this topic and payload of '0'/'1' to turn lamp off or on
+* `/devices/room_light/controls/Lamp/meta` - JSON with all meta information about control
+* `/devices/room_light/controls/Switch` - contains current wall switch state
+* `/devices/room_light/controls/Switch/meta` - JSON with all meta information about control
+* `/devices/room_light/controls/Switch/meta/error` - non-null value means there was an error reading or writing the control. In this case  `/devices/room_light/controls/Switch` contains last known good value.
 
 Each *device* usually represents the single physical device or one of the integrated peripheral of a complex physical device, although there are some boundary cases where the distinction is not clear. The small and not-so-complex real-world devices (say, wireless weather sensor) are ought to be represented by a single *device* in the MQTT hierarchy. 
 Each *device* must be handled by a single driver or publisher, though it's not enforced in any way.
