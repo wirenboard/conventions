@@ -1,17 +1,17 @@
 ## Wiren Board MQTT Conventions
 
-### Basic Concepts
+### 1. Basic Concepts
 
 The basic abstractions are *devices* and their *controls*. 
 
-#### Root Path
+#### 1.1. Root Path
 
 All devices must be located at the root level of the MQTT broker under the `/devices/...` topic (e.g., `/devices/<!new_device_name!>/...`).
 
 Each *device* has some *controls* assigned to it, i.e. parameters that can be controlled or monitored.
 *Devices* and *controls* are identified by names, which are generally arbitrary strings.
 
-#### Naming Conventions (2024+)
+#### 1.2. Naming Conventions (2024+)
 
 Starting from 2024, WirenBoard has established the following rules for naming MQTT topics for new devices and their controls:
 - The topic name cannot include punctuation, brackets, or special characters such as %$#& etc.
@@ -23,7 +23,7 @@ Examples:
 - Bad: `/devices/Room-Light#1/meta`
 - Old: `/devices/RoomLight/meta` - not recommended for new topics
 
-### Device and Controls Hierarchy example
+#### 1.3. Device and Controls Hierarchy example
 For example, some room lighting control *device* with one input (for wall switch) and one output (for controlling the lamp) *controls* is represented with MQTT topics as following:
 
 * `/devices/room_light/meta` - JSON with all meta information about *device*
@@ -40,12 +40,12 @@ Each *device* must be handled by a single driver or publisher, though it's not e
 
 The *Conventions* are based on [HomA MQTT Conventions](https://github.com/binarybucks/homA/wiki/Conventions). The main changes are: no configuration is stored in MQTT (as MQTT is not so good as a database) and the *control* types system is more developed and complicated.
 
-### Metadata Publishing
+### 2. Metadata Publishing
 
 The metadata is published exclusively in the `*/meta` topics and their subtopics.
 Metadata messages are published on device startup with `retained` flag set.
 
-#### Device's `/meta` topic
+#### 2.1. Device's `/meta` topic
 
 The topic contains all meta information in one JSON
 
@@ -62,7 +62,7 @@ The topic contains all meta information in one JSON
 English title could be published in `/devices/+/meta/name` for backward compatibility with old conventions.
 
 
-#### Controls's `/meta` topic
+#### 2.2. Controls's `/meta` topic
 
 The topic contains all meta information in one JSON
 
@@ -116,7 +116,7 @@ The topic contains all meta information in one JSON
 
 `type`, `min`, `max`, `order`, `readonly` could be published as subtopics of `/devices/+/controls/+/meta` for backward compatibility with old conventions.
 
-### Control Types
+### 3. Control Types
 
 #### Switch
 A control that toggles it's value when pressed by the user.
