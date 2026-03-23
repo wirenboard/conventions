@@ -4,7 +4,7 @@
 
 The basic abstractions are *devices* and their *controls*. 
 
-### Topic Structure & Root Path
+### Root Path
 
 All devices must be located at the root level of the MQTT broker under the `/devices/...` topic (e.g., `/devices/<!new_device_name!>/...`).
 
