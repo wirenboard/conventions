@@ -23,11 +23,6 @@ Starting from 2024, WirenBoard has established the following rules for naming MQ
 - Bad: `/devices/Room-Light#1/meta`
 - Old: `/devices/RoomLight/meta` - not recommended for new topics
 
-### Metadata Publishing
-
-The metadata is published exclusively in the `*/meta` topics and their subtopics.
-Metadata messages are published on device startup with `retained` flag set.
-
 ### Example: Device and Controls Hierarchy
 For example, some room lighting control *device* with one input (for wall switch) and one output (for controlling the lamp) *controls* is represented with MQTT topics as following:
 
@@ -45,7 +40,12 @@ Each *device* must be handled by a single driver or publisher, though it's not e
 
 The *Conventions* are based on [HomA MQTT Conventions](https://github.com/binarybucks/homA/wiki/Conventions). The main changes are: no configuration is stored in MQTT (as MQTT is not so good as a database) and the *control* types system is more developed and complicated.
 
-### Device's `/meta` topic
+### Metadata Publishing
+
+The metadata is published exclusively in the `*/meta` topics and their subtopics.
+Metadata messages are published on device startup with `retained` flag set.
+
+#### Device's `/meta` topic
 
 The topic contains all meta information in one JSON
 
@@ -62,7 +62,7 @@ The topic contains all meta information in one JSON
 English title could be published in `/devices/+/meta/name` for backward compatibility with old conventions.
 
 
-### Controls's `/meta` topic
+#### Controls's `/meta` topic
 
 The topic contains all meta information in one JSON
 
