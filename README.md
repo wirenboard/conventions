@@ -33,7 +33,7 @@ For example, some room lighting control *device* with one input (for wall switch
 * `/devices/room_light/controls/lamp/meta` - JSON with all meta information about control
 * `/devices/room_light/controls/switch` - contains current wall switch state
 * `/devices/room_light/controls/switch/meta` - JSON with all meta information about control
-* `/devices/room_light/controls/switch/meta/error` - non-null value means there was an error reading or writing the control. In this case  `/devices/room_light/controls/Switch` contains last known good value.
+* `/devices/room_light/controls/switch/meta/error` - non-null value means there was an error reading or writing the control. In this case  `/devices/room_light/controls/switch` contains last known good value.
 
 Each *device* usually represents the single physical device or one of the integrated peripheral of a complex physical device, although there are some boundary cases where the distinction is not clear. The small and not-so-complex real-world devices (say, wireless weather sensor) are ought to be represented by a single *device* in the MQTT hierarchy. 
 Each *device* must be handled by a single driver or publisher, though it's not enforced in any way.
