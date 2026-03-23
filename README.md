@@ -4,14 +4,14 @@
 
 The basic abstractions are *devices* and their *controls*. 
 
-### Root Path
+#### Root Path
 
 All devices must be located at the root level of the MQTT broker under the `/devices/...` topic (e.g., `/devices/<!new_device_name!>/...`).
 
 Each *device* has some *controls* assigned to it, i.e. parameters that can be controlled or monitored.
 *Devices* and *controls* are identified by names, which are generally arbitrary strings.
 
-### Naming Conventions (2024+)
+#### Naming Conventions (2024+)
 
 Starting from 2024, WirenBoard has established the following rules for naming MQTT topics for new devices and their controls:
 - The topic name cannot include punctuation, brackets, or special characters such as %$#& etc.
