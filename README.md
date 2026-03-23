@@ -18,12 +18,12 @@ Starting from 2024, WirenBoard has established the following rules for naming MQ
 - For a new device, the topic name should not contain more than four words and numbers. Write each word in lowercase and separate them with underscores.
 - For a new version of an existing device, make the topics compatible with the old pattern (marked as deprecated). The names of new topics should be styled identically to the existing topics.
 
-**Examples:**
+Examples:
 - Good: `/devices/room_light/meta`
 - Bad: `/devices/Room-Light#1/meta`
 - Old: `/devices/RoomLight/meta` - not recommended for new topics
 
-### Example: Device and Controls Hierarchy
+### Device and Controls Hierarchy example
 For example, some room lighting control *device* with one input (for wall switch) and one output (for controlling the lamp) *controls* is represented with MQTT topics as following:
 
 * `/devices/room_light/meta` - JSON with all meta information about *device*
