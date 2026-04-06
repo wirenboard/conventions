@@ -153,6 +153,11 @@ A control that displays a value as text.
 * Meta topic value: text
 * Possible values: Anything
 
+#### Unix time
+A control type for unix time.
+* Meta topic value: unixtime
+* Possible values: integer unix time
+
 #### 1-Wire Device Identifier
 A control type for Dallas 1-Wire device identifiers (addresses). 
 * Meta topic value: w1-id
