@@ -238,6 +238,9 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | Hz        | hertz, frequency |
 | rpm       | revolutions per minute |
 | Pa        | pressure |
+| var       | volt-ampere reactive, reactive power |
+| VA        | volt-ampere, apparent power |
+| kvarh     | kilovolt-ampere reactive hour, reactive energy |
 
 #### Errors
 
