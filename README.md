@@ -90,6 +90,9 @@ The topic contains all meta information in one JSON
     // The control doesn't have /on topic. Default value is false
     "readonly": true,
 
+    // The control is for internal use only. Do not show it in web-interface. Default value is false
+    "hidden": true,
+
     "title": {
         "en": CONTROL_TITLE,    // English title of the control
         "ru": CONTROL_TITLE_RU, // Russian title of the control
