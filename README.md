@@ -2,7 +2,7 @@
 
 ### 1. Basic Concepts
 
-The basic abstractions are *devices* and their *controls*. 
+The basic abstractions are *devices* and their *controls*.
 
 #### 1.1. Root Path
 
@@ -213,6 +213,7 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | m^3/h     | cubic meters per hour, flow |
 | m^3       | cubic meters, volume |
 | Gcal/h    | giga calories per hour, heat power |
+| g/m^3     | gram per cubic meter, gas concentration |
 | cal       | calories, energy |
 | Gcal      | giga calories, energy |
 | Ohm       | resistance |
@@ -248,7 +249,7 @@ Precision could be specified in ```precision``` property. The value is rounded t
 #### Errors
 
 `/devices/+/controls/+/meta/error`
-`/devices/+/meta/error` 
+`/devices/+/meta/error`
 
 Topics can contain a combination of values:
 - `r` - failed to read from device or a device reports an error
