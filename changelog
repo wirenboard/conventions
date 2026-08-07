@@ -1,3 +1,12 @@
+Conventions (1.4.2) stable; urgency=medium
+
+  * Describe /on topic, retained flag, removal of devices and controls
+  * Describe legacy /meta/<key> subtopics and their payload format
+  * Clarify readonly default, enum presentation, range vs value and error behaviour
+  * Fix units applicability: it is meaningful for range too, not only for value
+
+ -- Andrey Radionov <andrey.radionov@struhe.com>  Fri, 07 Aug 2026 12:00:00 +0300
+
 Conventions (1.4.1) stable; urgency=medium
 
   * Add new unit: g/m^3
