@@ -126,6 +126,11 @@ A control that toggles it's value when pressed by the user.
 * Meta topic value: switch
 * Possible values: 0 or 1
 
+#### Write-only switch
+A switch variant that can only be written: the driver does not read its state back from the device.
+* Meta topic value: wo-switch
+* Possible values: 0 or 1
+
 #### Alarm
 A control that indicates whether an alarm is active.
 * Meta topic value: alarm
@@ -214,6 +219,7 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | m^3       | cubic meters, volume |
 | Gcal/h    | giga calories per hour, heat power |
 | g/m^3     | gram per cubic meter, gas concentration |
+| ug/m^3    | microgram per cubic meter, mass concentration |
 | cal       | calories, energy |
 | Gcal      | giga calories, energy |
 | Ohm       | resistance |
