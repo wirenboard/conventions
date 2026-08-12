@@ -1,7 +1,6 @@
 Conventions (1.4.2) stable; urgency=medium
 
   * Add wo-switch control type
-  * Add ug/m^3 unit
 
  -- Pavel Gasheev <pavel.gasheev@wirenboard.com>  Tue, 11 Aug 2026 22:33:16 +0300
 

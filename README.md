@@ -219,7 +219,6 @@ Precision could be specified in ```precision``` property. The value is rounded t
 | m^3       | cubic meters, volume |
 | Gcal/h    | giga calories per hour, heat power |
 | g/m^3     | gram per cubic meter, gas concentration |
-| ug/m^3    | microgram per cubic meter, mass concentration |
 | cal       | calories, energy |
 | Gcal      | giga calories, energy |
 | Ohm       | resistance |
