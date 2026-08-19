@@ -1,3 +1,9 @@
+Conventions (1.5.0) stable; urgency=medium
+
+  * Rename unixtime control type to local_time, unixtime is deprecated
+
+ -- Ilya Titov <ilya.titov@wirenboard.com>  Wed, 19 Aug 2026 14:25:00 +0300
+
 Conventions (1.4.2) stable; urgency=medium
 
   * Add wo-switch control type
