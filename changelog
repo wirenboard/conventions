@@ -1,6 +1,6 @@
 Conventions (1.5.0) stable; urgency=medium
 
-  * Rename unixtime control type to local_time, unixtime is deprecated
+  * Rename unixtime control type to local_time
 
  -- Ilya Titov <ilya.titov@wirenboard.com>  Wed, 19 Aug 2026 14:25:00 +0300
 

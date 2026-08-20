@@ -166,8 +166,6 @@ A control type for local time.
 * Meta topic value: local_time
 * Possible values: integer number of seconds since 1970-01-01 00:00:00, where date and time components are local, not UTC
 
-:warning: **WARNING**: `unixtime` is a deprecated meta topic value of this control type. It is kept for backward compatibility, use `local_time` instead.
-
 #### 1-Wire Device Identifier
 A control type for Dallas 1-Wire device identifiers (addresses). 
 * Meta topic value: w1-id
