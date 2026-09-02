@@ -161,10 +161,10 @@ A control that displays a value as text.
 * Meta topic value: text
 * Possible values: Anything
 
-#### Unix time
-A control type for unix time.
-* Meta topic value: unixtime
-* Possible values: integer unix time
+#### Local time
+A control type for local time.
+* Meta topic value: local_time
+* Possible values: integer number of seconds since 1970-01-01 00:00:00, where date and time components are local, not UTC
 
 #### 1-Wire Device Identifier
 A control type for Dallas 1-Wire device identifiers (addresses). 
