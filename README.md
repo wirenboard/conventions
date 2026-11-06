@@ -74,7 +74,7 @@ The topic contains all meta information in one JSON
     // Units. ASCII string. Could be set only for type "value". No units by default
     "units": "W",
 
-    // Maximum allowed control's value. Default value for range type is 10^9, for other types no limit specified by default
+    // Maximum allowed control's value. Default value for range type is 255, for other types no limit specified by default
     "max": 100,
 
     // Minimum allowed control's value. Default value for range type is 0, for other types no limit specified by default
