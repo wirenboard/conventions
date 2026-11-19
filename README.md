@@ -71,7 +71,7 @@ The topic contains all meta information in one JSON
     // Control's type
     "type": "value",
 
-    // Units. ASCII string. Could be set only for type "value". No units by default
+    // Units. ASCII string. Could be set only for types "value" and "range". No units by default
     "units": "W",
 
     // Maximum allowed control's value. Default value for range type is 255, for other types no limit specified by default
